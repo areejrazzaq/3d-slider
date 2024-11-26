@@ -1,0 +1,192 @@
+/* ===========VARIABLES================== */
+:root {
+    /* Colors */
+    --white-color: hsl(0, 0%, 100%);
+    --black-color: hsl(0, 0%, 0%);
+
+    /* Font family */
+    --body-font: 'Clash Display', sans-serif;
+
+    /* Font sizes */
+    --h1-font-size: 2rem;
+    --h2-font-size: 1.5rem;
+    --normal-font-size: 1rem;
+
+    /* Font weight */
+    --font-semibold: 600;
+    --font-bold: 700;
+}
+
+/* Responsive typpgraphy */
+@media screen and (max-width: 1024px) {}
+
+
+/* Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--black-color);
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* =================HEADER & NAV====================== */
+
+.header {
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: background 0.3s;
+}
+
+/* bg color for header for 50+ px */
+.bg-header {
+    background-color: var(--white-color);
+}
+.bg-header .nav-logo {
+    color: var(--black-color);
+}
+
+.nav,
+.nav-list,
+.nav-actions {
+    display: flex;
+}
+
+.nav {
+    align-items: center;
+    justify-content: space-between;
+    height: 5.5rem;
+    max-width: 1568px;
+    margin-inline: auto;
+    /* not working */
+    padding-inline: 1rem;
+}
+
+.nav-logo {
+    color: var(--white-color);
+    font-size: var(--h1-font-size);
+    font-weight: var(--font-bold);
+    transition: color 0.3s;
+
+}
+
+.nav-list {
+    column-gap: 3.5rem;
+
+}
+
+.nav-link {
+    color: var(--black-color);
+}
+
+.nav-actions {
+    font-size: var(--h2-font-size);
+    column-gap: 1rem;
+}
+
+.nav-toggle,
+.nav-close {
+    display: none;
+}
+
+/* ================swiper ==================*/
+.swiper {
+    height: 100%;
+}
+
+
+/* ================Home ==================*/
+.home {
+    min-height: 100dvh;
+    /* height: 900px; */
+    position: relative;
+}
+
+
+.home-data {
+    background-color: var(--background-color);
+}
+
+/* swpipet title */
+.home-title {
+    color: var(--white-color);
+    font-size: clamp(5.5rem, -1.1667rem + 33.3333vw, 28rem);
+    font-weight: var(--font-semibold);
+    position: absolute;
+    top: calc(50% - 4.25rem);
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Empty home */
+.home-mockup {
+    position: absolute;
+    top: calc(50% + 2.25rem);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: clamp(9.375rem, 5.5568rem + 19.0909vw, 19.875rem);
+    aspect-ratio: 45 / 83;
+    /* to move image from left */
+    /* getting changed by js */
+    --left : 0;  
+    background: url('../img/labels.png') var(--left),  url('../img/can.png');
+    background-size: auto 100%;
+    background-blend-mode: multiply; /* blended*/
+    /* To remove edges */
+    mask-image: url('../img/can.png'); 
+    mask-size: auto 100%;
+    mask-repeat: no-repeat;
+    z-index: 100;
+    /* transition for smoothness */
+    transition: background 1s ease-in;
+}
+
+.second-swiper {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+.home-fruit-img {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+/* shop taste btn */
+.home-btn {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--white-color);
+    padding: 1.25rem 2.25rem;
+    border-radius: 2rem;
+    color: var(--black-color);
+    font-weight: var(--font-semibold);
+    z-index: 100;
+}

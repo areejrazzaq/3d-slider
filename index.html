@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ====================REMIX ICONS============================ -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!-- ===================FONT SHARE============================ -->
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=clash-display@500,600,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ===================SWIPER CSS============================ -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- ====================CSS============================ -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>Responsive 3d Slider</title>
+  </head>
+  <body>
+    <!-- =================HEADER ============ -->
+    <header class="header" id="header">
+      <nav class="nav">
+        <a href="#" class="nav-logo">Fruity</a>
+
+        <div class="nav-menu">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#" class="nav-link">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Careers</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Partnership</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Contact</a>
+            </li>
+          </ul>
+
+          <!--  -->
+          <div class="nav-close">
+            <i class="ri-close-line"></i>
+          </div>
+        </div>
+
+        <div class="nav-actions">
+          <i class="ri-user-line"></i>
+          <i class="ri-shopping-cart-line"></i>
+          <div class="nav-toggle">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- =================MAIN============ -->
+    <main>
+      <!-- swiper and title -->
+      <section class="home" id="home">
+        <div class="swiper first-swiper">
+          <div class="swiper-wrapper">
+            <div
+              class="swiper-slide home-data"
+              style="--background-color: hsl(79, 66%, 72%)"
+            >
+              <h1 class="home-title">Pear</h1>
+            </div>
+            <div
+              class="swiper-slide home-data"
+              style="--background-color: hsl(0, 100%, 85%)"
+            >
+              <h1 class="home-title">Apple</h1>
+            </div>
+            <div
+              class="swiper-slide home-data"
+              style="--background-color: hsl(242, 66%, 85%)"
+            >
+              <h1 class="home-title">Exotic</h1>
+            </div>
+          </div>
+        </div>
+
+        <div class="home-mockup" id="home-mockup"></div>
+
+        <div class="swiper second-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide home-fruit">
+              <img src="assets/img/pears.png" alt="" class="home-fruit-img">
+            </div>
+            <div class="swiper-slide home-fruit">
+              <img src="assets/img/apples.png" alt="" class="home-fruit-img">
+            </div>
+            <div class="swiper-slide home-fruit">
+              <img src="assets/img/passion.png" alt="" class="home-fruit-img">
+            </div>
+          </div>
+        </div>
+
+        <a href="#" class="home-btn">Shop Taste</a>
+      </section>
+    </main>
+
+    <!-- ===================SWIPER JS============================ -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- ====================SCRIPT============================ -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
